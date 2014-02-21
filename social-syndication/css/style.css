@@ -1,0 +1,253 @@
+fieldset{
+	margin: 10px 0;
+	border: 1px #ddd solid;
+	padding: 10px;
+}
+label{
+	clear: both;
+}
+input[type=checkbox]{
+	margin: 0 5px;
+}
+input[type=text]{
+	display: inline-block;
+}
+p.warning{
+	color: red;
+	margin-top: 0;
+	font-style: italic;
+	font-size: 11px;
+}
+a.addMore{
+	font-size: 11px;
+	font-weight: bold;
+	color: #0480be;
+	clear: both;
+}
+a.addMore:hover{
+	color: #000066;
+}
+.delete{
+	display: inline-block;
+	width: 20px; height: 18px;
+	clear: both;
+	background: url('../../../../wp-includes/images/uploader-icons.png') transparent no-repeat -96px 5px;
+}
+
+.configuration_block{
+	border: 1px #363636 solid;
+	display: block;
+	padding: 10px;
+	margin: 10px 10px 10px 0;
+	width: auto;
+	float: left;
+}
+
+.configuration_block.active{
+	border: 1px #006505 solid;
+	background: #DDEECD;
+}
+
+.configuration_block .label{
+	width: 100px;
+	display: inline-block;
+}
+
+#pixels_grid{
+	clear: both;
+}
+
+#pixels_grid .pixels_element{
+	overflow:hidden;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	cursor: pointer;
+	/*-webkit-transition: all 444ms;*/
+}
+#pixels_grid .pixels_element.publish{
+	width: 50px;
+	height: 50px;
+}
+#pixels_grid .pixels_element.twitter{
+	background: url('../img/twitter-bg.png') transparent no-repeat center top;
+}
+
+#pixels_grid .pixels_element.removed{
+	height: 0;
+	width: 0;
+}
+
+#pixels_grid .pixels_element .overlay{
+	position: absolute;
+	opacity: 0;
+	top: 0; left: 0;
+	height: 58%; width: 100%;
+	text-align: center;
+	padding-top: 42%;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+#pixels_grid .pixels_element .overlay.publishing{
+	background: #a1c895;
+	color: #000000;
+}
+
+#pixels_grid .pixels_element .overlay.deleting{
+	background: #834747;
+	color: #000000;
+}
+
+#pixels_grid .pixels_element.publishing .overlay.publishing,#pixels_grid .pixels_element.deleting .overlay.deleting{
+	opacity: 0.8;
+}
+
+
+#pixels_grid .pixels_element.active{
+	width: 300px;
+	height: 300px;
+}
+
+
+
+#pixels_grid .pixels_element.instagram:hover .excerpt,
+#pixels_grid .pixels_element.flickr:hover .excerpt
+{
+	top: 0;
+}
+
+#pixels_grid .pixels_element.publish.instagram:hover .excerpt,
+#pixels_grid .pixels_element.publish.flickr:hover .excerpt{
+	top:-79%;
+}
+
+#pixels_grid .pixels_element img{
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+}
+
+#pixels_grid .pixels_element .excerpt{
+	width: 100%;
+	height: 75%;
+	position: absolute;
+	top:-79%;
+	left: 0;
+	-webkit-transition: top 444ms;
+	font-size: 16px;
+	font-family: Helvetica;
+	line-height: 25px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 2%;
+	background: url('../img/bg-excerpt.png') transparent repeat left top;
+	color: #fdf8ff;
+}
+
+#pixels_grid .pixels_element.twitter .excerpt{
+	top: 0;
+	background: none;
+	color: #363636;
+}
+
+#pixels_grid .pixels_element .moderate{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 21%;
+	bottom: -21%;
+	-webkit-transition: bottom 444ms;
+}
+
+#pixels_grid .pixels_element .moderate .publish,#pixels_grid .pixels_element .moderate .delete-ss{
+	width: 50%;
+	height: 50%;
+	float: left;
+	opacity: 0.8;
+	cursor: pointer;
+	-webkit-transition: opacity 222ms;
+}
+
+#pixels_grid .pixels_element .moderate .publish:hover,#pixels_grid .pixels_element .moderate .delete-ss:hover{
+	opacity: 1;
+}
+
+
+#pixels_grid .pixels_element .moderate .original{
+	background: #3c3c3c;
+	opacity: 0.9;
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	color: #fdf8ff;
+	line-height: 13px;
+	font-size: 11px;
+}
+#pixels_grid .pixels_element .moderate .original a{
+	color: #fdf8ff;
+}
+#pixels_grid .pixels_element .moderate .original a:hover{
+	text-decoration: none;
+}
+
+#pixels_grid .pixels_element:hover .moderate{
+	bottom: 0;
+}
+
+#pixels_grid .pixels_element.publish:hover .moderate{
+	bottom: -21%;
+}
+
+#pixels_grid .pixels_element .moderate .publish{
+	background: url('../img/yes.png') #a1c895 no-repeat center center;
+}
+#pixels_grid .pixels_element .moderate .delete-ss{
+	background: url('../img/no.png') #834747 no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+.isotope,
+.isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+.isotope {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property:    -moz-transform, opacity;
+	-ms-transition-property:     -ms-transform, opacity;
+	-o-transition-property:      -o-transform, opacity;
+	transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-ms-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	transition-duration: 0s;
+}
